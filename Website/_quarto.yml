@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Home"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made with ❤️ and Quarto"
+  navbar:
+    title: Nathan Hong
+    left:
+      - href: Final Project.qmd
+        text: Final
+    right: 
+      - icon: github
+        href: https://github.com/nathan31h
+      
+format:
+  html:
+    backgroundcolor: "#212020"
+    fontcolor: "white"
+    linkcolor: "#4E7CDE"
+    theme: [cosmo, styles.scss]
+

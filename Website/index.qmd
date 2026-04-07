@@ -1,0 +1,24 @@
+---
+title: "Nathan Hong"
+subtitle: "Actuarial Science Major"
+# `profile.jpg` photo by Jan Tinneberg on https://unsplash.com
+image: personal image.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/nathan31h
+---
+
+A little bit about me and my life.
+
+## Education
+
+John A. Rowland High School \| Rowland Heights \| Sept 2018 - June 2021
+
+## Experience
+
+Boiling Point \| Server \| July 2021 - June 2024
+
+Topocean \| Part Time - CS \| October 2024 - Present
