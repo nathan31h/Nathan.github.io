@@ -17,7 +17,7 @@ website:
       
 format:
   html:
-    backgroundcolor: "#212020"
+    backgroundcolor: "#5c5a5a"
     fontcolor: "white"
     linkcolor: "#4E7CDE"
     theme: [cosmo, styles.scss]
