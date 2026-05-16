@@ -376,18 +376,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This project improved ever so slightly my understanding of statistical learning methods and how they can be applied to real-world data. Through exploratory data analysis, I learned how visualizations help identify relationships between variables and guide model selection.</p>
 <p>The unsupervised learning portion demonstrated how k-means clustering can group songs with similar characteristics, while the supervised learning section showed how different models can be used to predict energy. I also gained a better understanding of hyperparameter tuning and the bias-variance tradeoff in KNN models.</p>
 <p>In addition, this project provided practical experience with data cleaning, handling missing values, scaling variables, and troubleshooting coding errors. Overall, the project helped strengthen my understanding of both statistical learning techniques and their application to music-related data.</p>
-<section id="limitations-and-future-work" class="level3">
-<h3 class="anchored" data-anchor-id="limitations-and-future-work">Limitations and Future Work</h3>
-<p>This section should include further exploration of the limitations of your modeling approach. Some avenues of exploration include:</p>
-<ul>
-<li>Who/what is being poorly predicted by your model? Why?</li>
-<li>How might someone improve the data collection or analysis in the future?</li>
-<li>Are the assumptions behind your analytical methods justified?</li>
-<li>Are there ethical concerns about how the data was collected or how the results of the analysis could be used in the real world?</li>
-</ul>
-
-
 </section>
+<section id="limitations-and-future-work" class="level1">
+<h1>Limitations and Future Work</h1>
+<p>One limitation of this analysis is that the models were built using a small number of predictor variables. Although variables such as loudness, danceability, acousticness, and valence were useful for predicting energy, there are many additional factors that influence a song’s characteristics that were not included in the dataset. Because of this, some songs may be predicted less accurately than others, particularly songs with unusual musical styles or combinations of features.</p>
+<p>Another limitation is that some relationships observed during exploratory analysis appeared nonlinear, while the linear regression model assumes linear relationships between predictors and the response variable. Although the KNN model is more flexible, its performance depends heavily on the choice of k and the structure of the data. In addition, KNN can become sensitive to noise and less effective when observations are sparse.</p>
+<p>Missing values also reduced the number of observations available for analysis because rows containing missing data had to be removed before modeling and clustering. Future analyses could explore methods for handling missing values more effectively, such as imputation techniques.</p>
+<p>An additional area for future work would be expanding the dataset to include songs and not necessarily stick strictly to just Taylor Swift. Being able to explore different genres could work too. This would allow the models to capture a wider range of musical characteristics and improve generalizability. There is as I mentioned before comparing to not just energy but based on popularity as it can be more easily understandable as to why/how a song is more popular than others.</p>
+<p>There are also some ethical considerations related to music data analysis. Audio features are often generated automatically using proprietary algorithms, and the exact methods used to calculate these features may not always be transparent. In real-world applications, predictive models based on music data could influence recommendation systems or marketing decisions, which may unintentionally favor certain musical styles or artists over others.</p>
+
+
 </section>
 
 </main> <!-- /main -->

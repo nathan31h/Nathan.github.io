@@ -159,12 +159,14 @@ The unsupervised learning portion demonstrated how k-means clustering can group 
 
 In addition, this project provided practical experience with data cleaning, handling missing values, scaling variables, and troubleshooting coding errors. Overall, the project helped strengthen my understanding of both statistical learning techniques and their application to music-related data.
 
-### Limitations and Future Work
+# Limitations and Future Work
 
-This section should include further exploration of the limitations of your modeling approach. Some avenues of exploration include:
+One limitation of this analysis is that the models were built using a small number of predictor variables. Although variables such as loudness, danceability, acousticness, and valence were useful for predicting energy, there are many additional factors that influence a song’s characteristics that were not included in the dataset. Because of this, some songs may be predicted less accurately than others, particularly songs with unusual musical styles or combinations of features.
 
--   Who/what is being poorly predicted by your model? Why?
--   How might someone improve the data collection or analysis in the future?
--   Are the assumptions behind your analytical methods justified?
--   Are there ethical concerns about how the data was collected or how the results of the analysis could be used in the real world?
+Another limitation is that some relationships observed during exploratory analysis appeared nonlinear, while the linear regression model assumes linear relationships between predictors and the response variable. Although the KNN model is more flexible, its performance depends heavily on the choice of k and the structure of the data. In addition, KNN can become sensitive to noise and less effective when observations are sparse.
 
+Missing values also reduced the number of observations available for analysis because rows containing missing data had to be removed before modeling and clustering. Future analyses could explore methods for handling missing values more effectively, such as imputation techniques.
+
+An additional area for future work would be expanding the dataset to include songs and not necessarily stick strictly to just Taylor Swift. Being able to explore different genres could work too. This would allow the models to capture a wider range of musical characteristics and improve generalizability. There is as I mentioned before comparing to not just energy but based on popularity as it can be more easily understandable as to why/how a song is more popular than others.
+
+There are also some ethical considerations related to music data analysis. Audio features are often generated automatically using proprietary algorithms, and the exact methods used to calculate these features may not always be transparent. In real-world applications, predictive models based on music data could influence recommendation systems or marketing decisions, which may unintentionally favor certain musical styles or artists over others.
